@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> HTML et Javascript </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <br>
+    <label for="txtPreom"> Prenom: </label>
+    <input type = "text" id = "txtPrenom">
+  </br>
+  <br>
+    <label for="txtMilieu"> Milieu: </label>
+    <input type = "text" id = "txtMilieu" />
+  </br>
+  <br>
+    <label for="txtNom"> Nom: </label>
+    <input type= "text" id= "txtNom" />
+  </br>
+  <br>
+  <br>
+    <input type="button" id="btnSoumet" onclick="afficheInitiales()" value="Initiales" />
+  </br>
+  <br>
+    <input type="button" id="btnSoumet" onclick="afficheNom()" value="Nom Complet" />
+  </br>
+  <br>
+    <input type="button" id="btnSoumet" onclick="afficheUser()" value="Nom D'utilisateur" />
+  </br>
+    <div id="divAfficheI"></div>
+    <div id="divAfficheN"></div>
+    <div id="divAfficheU"></div>
+  <script src="script.js"> </script>
+</body>
+
+</html>
