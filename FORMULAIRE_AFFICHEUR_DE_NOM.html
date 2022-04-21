@@ -4,37 +4,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title> FORMULAIRE AFFICHEUR DE NOM </title>
+  <title> Quiz </title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-
+<body style="background-color:grey">
 <body>
-  <br>
-    <label for="txtPreom"> Prenom: </label>
-    <input type = "text" id = "txtPrenom">
-  </br>
-  <br>
-    <label for="txtMilieu"> Milieu: </label>
-    <input type = "text" id = "txtMilieu" />
-  </br>
-  <br>
-    <label for="txtNom"> Nom: </label>
-    <input type= "text" id= "txtNom" />
-  </br>
-  <br>
-  <br>
-    <input type="button" id="btnSoumet" onclick="afficheInitiales()" value="Initiales" />
-  </br>
-  <br>
-    <input type="button" id="btnSoumet" onclick="afficheNom()" value="Nom Complet" />
-  </br>
-  <br>
-    <input type="button" id="btnSoumet" onclick="afficheUser()" value="Nom D'utilisateur" />
-  </br>
-    <div id="divAfficheI"></div>
-    <div id="divAfficheN"></div>
-    <div id="divAfficheU"></div>
-  <script src="FORMULAIRE_AFFICHEUR_DE_NOM.js"> </script>
+  <h1> Quiz de le cours ICS! </h1>
+<p> Entrez votre nom. </p>
+
+    <label for="txtNom"> Nom : </label>
+     <input type="text" id="txtNom">
+<br>
+<br>
+       <label for="txtVar"> Combien il y a t'il dans le mot var? </label>
+<select id="selVar">
+   <option value="5"> 5 </option>
+   <option value="3"> 3 </option>
+   <option value="9"> 9 </option>
+   <option value="1"> 1 </option>
+</select>
+<br>
+<br>
+    <label for="Quiz">Lequelle de ses options est pour faire des "pop ups" dans ton prompt? </label>
+<br>
+    <input type="radio" name="prompt" id="popUp" value="BOOM!"> BOOM!
+<br>
+    <input type="radio" name="prompt" id="popUp" value="pop up"> pop up
+<br>
+    <input type="radio" name="prompt" id="popUp" value="alert" checked> alert
+<br>
+    <input type="radio" name="prompt" id="popUp" value="console.log"> console.log
+<br>
+<br>
+  <label for="chkBox"> Qu'est ce que tu utilise le plus souvant pour commencer tes codages? </label>
+<br>
+  <input type="checkBox" id="quiz" name="chkQuiz" value="fonction"> fonction
+<br>
+  <input type="checkBox" id="quiz" name="chkQuiz" value="Commentaires"> Commentaires
+<br>
+  <input type="checkBox" id="quiz" name="chkQuiz" value="if et else"> if et else
+<br>
+  <input type="checkBox" id="quiz" name="chkQuiz" value="var"> var
+<br>
+<br>
+  <input type="button" id="btnSoumet" onclick="confirmeQuiz()" value="Soumettre le formulaire">
+ <br>
+ <br>
+  <div id="divAfficheN"> </div>
+ <br>
+  <div id="divAfficheV"> </div>
+ <br>
+  <div id="divAfficheC"> </div>
+ <br>
+  <div id="divAfficheQ"> </div>
+  <script src="Quiz_ICS.js"> </script>
 </body>
 
 </html>
