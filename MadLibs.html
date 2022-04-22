@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <a href="index.html">Retour</a>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> Mad Libs </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="background-color:violet">
+<body>
+  <br>
+  <br>
+  <h1> Mad Libs d'aller au parc. </h1>
+  <p> Répondez à ces questions pour générer instantanément votre propre histoire en ligne ! Cette histoire n'a que des noms, des verbes et des adjectifs, elle peut donc être utilisée avec les classes de maternelle du tronc commun. (Indice : un verbe est une action. Un nom est une personne, un lieu ou une chose. Un adjectif décrit une personne/un lieu/une chose). </p>
+  <br>
+  <br>
+  <label for="txtNom1"> Nom : </label>
+  <input type="text" id="txtNom1">
+  <br>
+  <br>
+  <label for="txtDeterminant"> Nourriture, avec un determinant : </label>
+  <input type="text" id="txtDeterminant">
+  <br>
+  <br>
+  <label for="txtVerbe1"> Verbe a l'infinitif : </label>
+  <input type="text" id="txtVerbe1">
+  <br>
+  <br>
+  <label for="txtPerson"> Nom d'un personne : </label>
+  <input type="text" id="txtPerson">
+  <br>
+  <br>
+  <label for="txtNourriture1"> Nourriture, au pluriel : </label>
+  <input type="text" id="txtNourriture1">
+  <br>
+  <br>
+  <label for="txtAdjectif1"> Adjectif : </label>
+  <input type="text" id="txtAdjectif1">
+  <br>
+  <br>
+  <label for="txtVerbe2"> Verbe a l'infinitif : </label>
+  <input type="text" id="txtVerbe2">
+  <br>
+  <br>
+  <label for="txtAdverbe"> Adverbe, qui termine avec en -ment : </label>
+  <input type="text" id="txtAdverbe">
+  <br>
+  <br>
+  <label for="txtNourriture2"> Nourriture : </label>
+  <input type="text" id="txtNourriture2">
+  <br>
+  <br>
+  <label for="txtNom2"> Nom : </label>
+  <input type="text" id="txtNom2">
+  <br>
+  <br>
+  <label for="txtAdjectif2"> Adjectif : </label>
+  <input type="text" id="txtAdjectif2">
+  <br>
+  <br>
+  <input type="button" id="btnSoumet" onclick="afficheMadLibs()" value="Soumettre le formulaire">
+  <br>
+  <br>
+  <div id="divAfficheM"> </div>
+  <script src="Libs.js"> </script>
+</body>
+
+</html>
