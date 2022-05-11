@@ -82,6 +82,15 @@ if (!chkHat[0].checked) {
 } else {
   afficheHat.innerHTML = "x" + qteHat + " chapeau."
 }
+//les livraisons des achats
+var afficheLivraison = document.getElementById("divAfficheLivraison");
+var radLivraison= document.getElementsByName("Livraison");
+  if (radLivraison[0].checked) {
+    afficheLivraison.innerHTML = "Tes items viennent dans deux semaines" + (prixFinal).toFixed(2) + 30;
+ }
+  if (radLivraison[1].checked) {
+    afficheLivraison.innerHTML = "Tes items viennent dans 3 jours, ton totale est " + (prixFinal).toFixed(2) + 10;
+}
 //l'affiche de argent en retour
 var chkdot5$ = .5;
 var chkdot10$ = .10;
