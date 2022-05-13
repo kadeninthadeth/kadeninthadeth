@@ -60,27 +60,27 @@ if (!chkH[0].checked) {
   var qteH = document.getElementById("selHoodie").value;
   afficheH.innerHTML = " "
 } else {
-  afficheH.innerHTML = "x" + qteH + " hoodie."
+  afficheH.innerHTML = "x" + qteH + " Hoodie." + "(" + qteH*tblPrix[0] + ")"
 }
 if (!chkP[0].checked) {
   afficheP.innerHTML = " "
 } else {
-  afficheP.innerHTML = "x" + qteP + " pantalon."
+  afficheP.innerHTML = "x" + qteP + " Pantalon." + "(" + qteP*tblPrix[1] + ")"
 }
 if (!chkC[0].checked) {
   afficheC.innerHTML = " "
 } else {
-  afficheC.innerHTML = "x" + qteC + " chandail."
+  afficheC.innerHTML = "x" + qteC + " Chandail." + "(" + qteC*tblPrix[2] + ")"
 }
 if (!chkS[0].checked) {
   afficheS.innerHTML = " "
 } else {
-  afficheS.innerHTML = "x" + qteS + " soulier."
+  afficheS.innerHTML = "x" + qteS + " Soulier." + "(" + qteS*tblPrix[3] + ")"
 }
 if (!chkHat[0].checked) {
   afficheHat.innerHTML = " "
 } else {
-  afficheHat.innerHTML = "x" + qteHat + " chapeau."
+  afficheHat.innerHTML = "x" + qteHat + " Chapeau." + "(" + qteHat*tblPrix[4] + ")"
 }
 //les livraisons des achats
 var afficheLivraison = document.getElementById("divAfficheLivraison");
