@@ -86,10 +86,10 @@ if (!chkHat[0].checked) {
 var afficheLivraison = document.getElementById("divAfficheLivraison");
 var radLivraison = document.getElementsByName("Livraison");
   if (radLivraison[0].checked) {
-    afficheLivraison.innerHTML = "Tes items viennent dans deux semaines " + (prixFinal).toFixed(2) + 30;
+    afficheLivraison.innerHTML = "Tes items viennent dans deux semaines " + (prixFinal + 30).toFixed(2);
 }
   if (radLivraison[1].checked) {
-    afficheLivraison.innerHTML = "Tes items viennent dans 3 jours, ton totale est " + (prixFinal).toFixed(2) + 10;
+    afficheLivraison.innerHTML = "Tes items viennent dans 3 jours, ton totale est " + (prixFinal + 10).toFixed(2);
 }
 //l'affiche de argent en retour
 var chkdot5$ = .5;
