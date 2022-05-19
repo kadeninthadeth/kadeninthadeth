@@ -119,10 +119,10 @@ var pTaxON = (prixFinal*taxON);
 var pTaxQC = (prixFinal*taxQC);
 var nombreRecu = document.getElementById("txtPaye").value;
 //pour montrer le montant de redonner l'argent
-  if (nombreRecu >= prixFinal && radTaxes[0].checked && radLivraison[1].checked) {
+  if (nombreRecu >= prixFinal && radTaxes[0].checked && radLivraison[0].checked) {
     nombre = nombreRecu - (pTaxON + 30).toFixed(2);
   }
-  if (nombreRecu >= prixFinal && radTaxes[1].checked && radLivraison[0].checked) {
+  if (nombreRecu >= prixFinal && radTaxes[1].checked && radLivraison[1].checked) {
     nombre = nombreRecu - (pTaxQC + 10).toFixed(2);
   }
 //vérifier s'il faut redonner un billet de 100$
