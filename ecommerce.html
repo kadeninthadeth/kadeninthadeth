@@ -21,9 +21,9 @@
     <img src="https://earljones181.files.wordpress.com/2013/07/nike_swoosh.jpg" width="50%" height="50%"</img>
   </center>
   <br>
-  <center> <p> <b> Voici le site de Nikey, alors que les équipements <br> Nikey sont tous exclusifs, les articles de cette année sont <br> des vêtements et sont tous de couleur noire. </b> </p> </center>
-  <br>
-  <br>
+  <center>
+  <p> <b> Voici le site de Nikey, alors que les équipements <br> Nikey sont tous exclusifs, les articles de cette année sont <br> des vêtements et sont tous de couleur noire. </b> </p>
+  </center>
   <br>
 <div class="float-container">
   <div class="float-child1">
@@ -57,6 +57,7 @@
           <option value="10"> 10 </option>
         </select>
       </td>
+<!--Pour selecter item de hoodie-->
       <td>
         <label for="chkHoodie"> Selectionner </label><br>
 <input type="checkbox" id="chkHoodie" name="itemHoodie" value="0"><br>
@@ -82,6 +83,7 @@
           <option value="10"> 10 </option>
         </select>
       </td>
+<!--Pour selecter item de pantalon-->
       <td>
         <label for="chkPants"> Selectionner </label><br>
 <input type="checkbox" id="chkPants" name="itemPants" value="1"><br>
@@ -107,6 +109,7 @@
           <option value="10"> 10 </option>
         </select>
       </td>
+<!--Pour selecter item de chandail-->
       <td>
         <label for="chkChandail"> Selectionner </label><br>
 <input type="checkbox" id="chkChandail" name="itemChandail" value="2"><br>
@@ -131,6 +134,7 @@
           <option value="10"> 10 </option>
         </select>
       </td>
+<!--Pour selecter item de soulier-->
       <td>
         <label for="chkSoulier"> Selectionner </label><br>
 <input type="checkbox" id="chkSoulier" name="itemSoulier" value="3"><br>
@@ -157,8 +161,10 @@
         </select>
       </td>
       <td>
+<!--Pour selecter item de chapeau-->
         <label for="chkHat"> Selectionner </label><br>
-<input type="checkbox" id="chkHat" name="itemHat" value="4"><br>
+<input type="checkbox" id="chkHat" name="itemHat" value="4">
+        <br>
       </td>
       </tr>
   </table>
@@ -175,7 +181,7 @@
 <!--Bouton radio pour choisir le province-->
     <br>
     <br>
-     <label for="radTaxes"> Choisissez votre lieu de résidence : </label>
+     <label for="radTaxes"> <b> Choisissez votre lieu de résidence : </b> </label>
      <input type="radio" name="Taxes" id="radTaxesON" value="Ontario"> Ontario
       <label for="radTaxes"> </label>
       <input type="radio" name="Taxes" id="radTaxesQC" value="Quebec"> Quebec
@@ -187,7 +193,7 @@
         <center> ****************************************** </center>
       </td>
     </tr>
-<!--L'affichage des items et les prix/recu-->
+<!--L'affichage des items et les prix/recu/retour de l'argent-->
     <tr>
       <td>
         <br>
@@ -200,23 +206,26 @@
         <br>
         <div id="divAfficheF"> </div>
         <br>
-        <center> <div id="divAfficheT"> </div> </center>
+        <div id="divAfficheT"> </div>
+        <br>
+        <div id="divAfficheMontant"> </div>
+        <br>
+        <div id="divAfficheDemande"> </div>
+        <br>
+        <div id="divAfficheLivraison"> </div> 
         </center>
-        <br>
-        <center> <div id="divAfficheLivraison"> </div> </center>
-        <br>
-        <center> <div id="divAfficheMontant"> </div> </center>
         <br>
       </td>
     </tr> 
     <tr>    
       <td>
         <center>
-        <label for="txtPaye"> Combien voulez-vous payer : </label>
+        <label for="txtPaye"> <b> Combien voulez-vous payer : </b></label>
         <input type="text" id="txtPaye">
         </center>
+<!--Bouton de radio pour choisir le livraison-->
         <center> 
-        <label for="radTaxes"> Choisissez votre preference de livraison : </label>
+        <label for="radTaxes"> <b> Choisissez votre preference de livraison :  </b> </label>
      <input type="radio" name="Livraison" id="radRegulier" value="Regulier"> Regulier
       <label for="radTaxes"> </label>
       <input type="radio" name="Livraison" id="radPrime" value="KadenPrime"> KadenPrime
