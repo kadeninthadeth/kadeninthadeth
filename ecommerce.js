@@ -126,7 +126,7 @@ var nombreRecu = document.getElementById("txtPaye").value;
     nombre = nombreRecu - (pTaxQC + 10).toFixed(2);
   }
   if (nombreRecu >= prixFinal && radTaxes[0].checked && radLivraison[0].checked) {
-    nombre = nombreRecu - (pTaxQC + 10).toFixed(2);
+    nombre = nombreRecu - (pTaxON + 30).toFixed(2);
   }
   if (nombreRecu >= prixFinal && radTaxes[1].checked && radLivraison[1].checked) {
     nombre = nombreRecu - (pTaxQC + 10).toFixed(2);
